@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+width: 100%;
+height: 100vh;
+background: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(background.jpg);
+background-size: cover;
+background-position: center ;
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+}
+nav img{
+    width: 70px;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+    padding: 1% 8%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    padding: 2% 2%;
+    display: inline-block;
+
+}
+.nav-link ul li a{
+    text-decoration: none;
+font-size: 20px;
+color: #fff;
+}
+.nav-link ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: .5s;
+}
+.nav-link ul li:hover::after{
+width: 100%;
+}
+.buy a{
+    background-color: seagreen;
+    border-radius: 9px;
+    color: #fff;
+    padding: 10px 30px;
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
+}
+.tex-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 6% 2%;
+}
+.tex-box h1{
+    font-size: 50px;
+}
+.tex-box p{
+    margin: 10px 0 40px;
+    font-size: 17px;
+}
+.hero-buton{
+    text-decoration: none ;
+    color: #fff;
+    border: 2px solid;
+    color: #fff;
+    padding: 12px 30px;
+    position: relative;
+    background: transparent;
+    transition: 1s;
+}
+.hero-buton:hover{
+    background-color: seagreen;
+    
+}
+span{
+    display: none;
+}
+@media(max-width: 700px){
+
+    .tex-box h1{
+        font-size: 28px;
+    }
+    nav img{
+        width: 40px;
+        border-radius: 50%;
+    }
+    .tex-box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+    }
+    .nav-link{
+        display: block;
+        background: seagreen;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        color: #fff;
+        transition: 1s ease;
+
+
+    }
+    .nav-link ul{
+        padding: 15px;
+    }
+    .buy a{
+
+        display: none;
+    }
+    .nav-link ul li{
+        display: block;   
+    }
+    .nav-link ul li a{
+        font-size: 15px;
+    }
+    span{
+        display: block;
+        padding: 5px;
+        color: #fff;
+    }
+}

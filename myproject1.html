@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myproject.css">
+</head>
+<body>
+    <section class="header">
+<nav>
+    <a href="#"><img src="logo.jpg" alt=""></a>
+    <div class="nav-link" id="navbar">
+        <span id="close">close</span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+       
+    </div>
+    <div class="buy"><a href="">Buy</a></div>
+    <span id="show">show</span>
+</nav>
+<div class="tex-box">
+    <h1>Wellcome To Barde Blouse Biu</h1>
+    <p>
+        Barde Blouse Biu Offers High Quality Of Product In Biu Main Market,Biu Borno State. <br> All Our Costumers Will Get Easy Acces To Buy our product.
+    </p>
+    <a href=""class="hero-buton">See More About us</a>
+</div>
+    </section>
+
+
+    <script>
+        let navbar = document.getElementById("navbar");
+        let show = document.getElementById("show");
+        let close = document.getElementById("close");
+
+        show.onclick= function(){
+            navbar.style.right="0";
+        };
+
+        close.onclick= ()=>{
+            navbar.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
