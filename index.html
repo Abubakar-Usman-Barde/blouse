@@ -12,7 +12,8 @@
 <nav>
     <a href="#"><img src="logo.jpg" alt=""></a>
     <div class="nav-link" id="navbar">
-        <span id="close"><img src="close.png" alt=""></span>
+        <!-- <span id="hide"><img src="close.png" alt="">jj</span> -->
+        <p id="hide"><img src="close.png" alt=""></p>
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -508,13 +509,13 @@
     <script>
         let navbar = document.getElementById("navbar");
         let show = document.getElementById("show");
-        let close = document.getElementById("close");
+        let hide = document.getElementById("hide");
 
         show.onclick= function(){
             navbar.style.right="0";
         };
 
-        close.onclick= ()=>{
+        hide.onclick = function(){
             navbar.style.right="-200px";
         }
     </script>

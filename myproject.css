@@ -95,9 +95,15 @@ width: 100%;
     background-color: seagreen;
     
 }
-nav .nav-link span{
+    span{
     display: none;
 }
+
+.nav-link p{
+    display: none;
+}
+
+
 @media(max-width: 700px){
 
     .tex-box h1{
@@ -124,7 +130,9 @@ nav .nav-link span{
         color: #fff;
         transition: 1s ease;
 
-
+    }
+    .nav-link p{
+        display: block;
     }
     .nav-link ul{
         padding: 15px;
@@ -145,6 +153,12 @@ nav .nav-link span{
         color: #fff;
     }
     span img{
+        margin: 10px 0;
+        background-color: #fff;
+        width: 30px;
+    }
+    .nav-link img{
+        margin: 5px 2px;
         background-color: #fff;
         width: 30px;
     }
