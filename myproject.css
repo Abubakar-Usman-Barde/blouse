@@ -95,7 +95,7 @@ width: 100%;
     background-color: seagreen;
     
 }
-span{
+nav .nav-link span{
     display: none;
 }
 @media(max-width: 700px){
@@ -148,6 +148,15 @@ span{
         background-color: #fff;
         width: 30px;
     }
+
+    .small-barnner .banner-box{
+        margin: 20px 0;
+    }
+    .product1 .product-container{
+        padding: auto;
+        flex-direction: row;
+    }
+
 } 
 
 .product1{
@@ -158,8 +167,8 @@ span{
     min-width: 180px;
     border: 1px solid rgb(75, 72, 72);
     border-radius: 10px;
-    padding: 10px 10px;
-    margin: 35px 0;
+    padding: 10px 8px;
+    margin: 14px 10px;
     position: relative;
     cursor: pointer;
 }
@@ -227,26 +236,65 @@ span{
     padding: 12px 0;
 }
 
-
-.banner .buttun{
-    text-decoration: none ;
-    color: #fff;
-    border: 2px solid;
-    color: #fff;
-    padding: 12px 30px;
-    position: relative;
-    background: transparent;
-    transition: 1s;
-    width: 15%;
-    position: relative;
-    left: 45%;
+.banner span{
+    color: tomato;
 }
 
-.banner .buttun a{
+.banner a{
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
+    background: seagreen;
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    left: 35%;
+    border-radius: 10px;
 }
 .banner .buttun:hover{
+    background: rgb(120, 172, 142);
+}
+
+
+.small-barnner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(shop.jpg);
+    width: 580px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.small-barnner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.small-barnner h4{
+    color: #fff;
+}
+.small-barnner h2{
+    color: #fff;
+    padding: 12px 0;
+}
+
+
+.small-barnner a{
+    text-decoration: none;
+    color: #fff;
     background: seagreen;
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    left: 35%;
+    border-radius: 10px;
+    margin-top: 12px;
+
+}
+
+.small-barnner a:hover{
+    background: rgb(120, 172, 142);
 }
