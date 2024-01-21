@@ -1,13 +1,19 @@
+
+/* =============browser nomarlisation start====================*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* =============browser nomarlisation end====================*/
+
+/* =================hero section start==================== */
+
 .header{
 width: 100%;
 height: 100vh;
-background: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(background.jpg);
+background: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(./asset/background.jpg);
 background-size: cover;
 background-position: center ;
 position: relative;
@@ -36,30 +42,32 @@ nav{
 }
 .nav-link ul li{
     list-style: none;
-    padding: 2% 2%;
+    padding: 2% 1%;
     display: inline-block;
 
 }
 .nav-link ul li a{
     text-decoration: none;
-font-size: 20px;
-color: #fff;
+    font-size: 20px;
+    color: #fff;
 }
 .nav-link ul li::after{
     content: "";
     width: 0%;
     height: 2px;
+    background: seagreen;
     display: block;
     transition: .5s;
 }
 .nav-link ul li:hover::after{
 width: 100%;
 }
-.buy a{
-    background-color: seagreen;
-    border-radius: 9px;
-    color: #fff;
-    padding: 10px 30px;
+#buy a{
+    background-color: #fff;
+    border-radius: 7px;
+    font-size: 16px;
+    color:seagreen;
+    padding: 4px 20px;
     list-style: none;
     text-decoration: none;
     margin: auto;
@@ -95,7 +103,7 @@ width: 100%;
     background-color: seagreen;
     
 }
-    span{
+    .spans{
     display: none;
 }
 
@@ -103,6 +111,10 @@ width: 100%;
     display: none;
 }
 
+/* ====================hero section end=======================*/
+
+
+/*==============Mobile screen setup using media query start=============*/
 
 @media(max-width: 700px){
 
@@ -173,24 +185,27 @@ width: 100%;
 
 } 
 
+/*=============Mobile screen setup using media query end============= */
+
 .product1{
     text-align: center;
 }
 .product1 .product{
-    width: 15%;
-    min-width: 180px;
+    width: 5%;
+    min-width: 120px;
     border: 1px solid rgb(75, 72, 72);
     border-radius: 10px;
     padding: 10px 8px;
-    margin: 14px 10px;
+    margin:10px;
     position: relative;
     cursor: pointer;
+    background: #ffffffff;
 }
 .product1 .product-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 80px;
+    padding-top: 15px;
 }
 .product1 .product img{
     width: 100%;
@@ -236,11 +251,11 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(shop.jpg);
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./asset/shop.jpg);
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-position: center;
-    background-size: cover;
+    background-size: cover;;
 }
 .banner h4{
     color: #fff;
@@ -259,12 +274,13 @@ width: 100%;
     color: #fff;
     background: seagreen;
     width: 30%;
-    padding: 10px;
+    padding: 7px;
     position: relative;
     left: 35%;
     border-radius: 10px;
+    transition: 1s;
 }
-.banner .buttun:hover{
+.banner a:hover{
     background: rgb(120, 172, 142);
 }
 
@@ -275,11 +291,12 @@ width: 100%;
     justify-content: center;
     text-align: center;
     color: #fff;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(shop.jpg);
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./asset/shop.jpg);
     width: 580px;
     height: 50vh;
     background-position: center;
     background-size: cover;
+    border-radius: 15px;
 }
 
 .small-barnner{
@@ -304,11 +321,126 @@ width: 100%;
     padding: 10px;
     position: relative;
     left: 35%;
-    border-radius: 10px;
+    border-radius: 7px;
     margin-top: 12px;
+    transition: 1s;
 
 }
 
 .small-barnner a:hover{
     background: rgb(120, 172, 142);
+}
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./asset/shop.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 35px;
+}
+.newsletter h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.newsletter p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.newsletter input{
+    height: 3.125rem;
+    width: 100%;
+    font-size: 15px;
+    padding: 0 1.25em;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.newsletter button{
+    display: inline;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: seagreen;
+    border: none;
+    padding: 0 1.25em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  
+}
+.newsletter .form{
+    margin: 15px;
+    display: flex;
+    background: sienna;
+}
+footer .col img{
+    width: 200px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+footer h4{
+    padding-bottom: 20px;
+}
+ footer .follow{
+    margin-top: 10px;
+
+}
+footer .follow h6{
+    font-size: 18px;
+    color: seagreen;
+    display: inline;
+    padding-right: 5px;
+}
+footer .col p{
+    color: slategrey;
+    font-size: 14px;
+    padding-bottom: 10px;
+
+}
+
+footer strong{
+    color: black;
+}
+footer .col a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(51, 123, 126);
+    padding: 0 0 8px 0;
+}
+footer .col a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+footer .row{
+    margin: 0 0 8px 0;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: rgb(51, 123, 126);
+    line-height: 25px;
+}
+footer .copyright a:hover{
+    color: blue;
+    text-decoration: underline;
 }
